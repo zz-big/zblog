@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>zblog</title>
+		<script type="text/javascript" src="js/jquery-1.9.1.js" src="js/bootstrap.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="sheji.css">
+
+		<div style="position:relative;">
+			<img src='img/timg.png' height="100%" width="100%" />
+			　　<p style="position:absolute; text-align:right; z-index:2;font-weight: lighter; color:white ; right:20px ; top: 10px;font-size:1.2vw">
+				I asked myself once and once, how can I keep learning efficiently, and never ceases?<br />
+				Finally, I get my answer, everything for flaunting! </p>
+		</div>
+
+
+		<style type="text/css">
+			/*导航*/
+			.navBox {
+				height: 7%;
+				width: 100%;
+				background-color: #319BF3;
+			}
+
+			.navBox .nav {
+				height: 7%;
+				padding: 1% 0 1% 2%;
+			}
+
+			.navBox .nav li {
+				height: 32px;
+				line-height: 32px;
+				float: left;
+			}
+
+			.navBox .nav li a {
+				text-align: center;
+				height: 32px;
+				line-height: 32px;
+				color: #fff;
+				float: left;
+				padding: 0 60px 0 25px;
+				text-decoration: none;
+			}
+
+			.navBox .nav li a:hover {
+				height: 32px;
+				line-height: 32px;
+				background: #FF8C00;
+			}
+
+			.navBox .nav .active {
+				height: 32px;
+				line-height: 32px;
+				background: #FF8C00;
+			}
+
+			.navBox .nav li span {
+				width: 2px;
+				height: 32px;
+				float: right;
+				display: inline-block;
+
+			}
+		</style>
+
+		<script type="text/javascript">
+			function showa(formid) {
+				hideform("photo");
+				hideform("video");
+				hideform("article");
+				hideform("xxx");
+				$("#" + formid).show();
+			}
+
+			function hideform(formid) {
+				$("#" + formid).hide();
+			}
+		</script>
+
+		<script src="js/jquery-1.9.1.js"></script>
+		<script type='text/javascript'>
+			$(document).ready(function() { // ready 事件
+				$("li").each(function(index) { //便利对象
+					$(this).click(function() { //点击触发事件
+						$("li").removeClass("active"); //删除当前元素的样式
+						$("li").eq(index).addClass("active"); //添加当前元素的样式
+					});
+				});
+			});
+		</script>
+
+
+	</head>
+	<body>
+
+		<div class="navBox">
+			<div class="comWidth">
+				<ul class="nav">
+					<li class="active"><a href="javascript:void(0)" onclick="showa('photo')"><span>Photo</span> </a></li>
+					<li class=""><a href="javascript:void(0)" onclick="showa('video')"><span> Video</span></a></li>
+					<li class=""><a href="javascript:void(0)" onclick="showa('article')"><span> Article</span></a></li>
+					<li class=""><a href="javascript:void(0)" onclick="showa('xxx')"><span> xxx</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<br />
+
+		<div id="photo">
+			<section>
+				<div id="second">
+					<div style="font-size:2vw">CACHE THE WORLD</div>
+					<div style="font-size:3vw;padding-bottom: 5%;">
+						Seeing the world from pictures,
+						<br>balabalaba
+					</div>
+					<div>
+						<img src="img/0ce18d34589905d2b82ac235240f1ff7.jpg" width="50%">
+						<img src="img/621f7dd7380e4a50bd75e28f09fd5e59.jpg" width="50%" style="margin-top: 1%;">
+
+					</div>
+					<div>
+						<img src="img/5c025cad8222bff43a776249c5a47021.jpg" width="40%" style="margin-top: 1%;">
+						<img src="img/788843a139a88d3159d8d5e925e31c96.jpg" width="40%" style="margin-top: 1%;">
+					</div>
+
+				</div>
+			</section>
+
+			<br />
+
+
+			<div style="font-size:2vw;font-family: goudy old style ;margin-top: 5%" align="center" ;>MESSAGE</div>
+			<div style="font-size:3vw; font-family: blackadder itc;padding-bottom: 5%;" ; align="center " ;>
+				Drawing the world like pictures,
+				<br>balabalaba
+			</div>
+
+			<div style="position:relative;">
+				<img src='img/Background2.png' height="100%" width="100%" />
+				<h1 style="position:absolute; text-align: left; z-index:2;font-weight: lighter; color:white ; left:20px ; top: 5%; font-size:4vw; font-family: goudy old style">
+					Supportive policies for <br> China's smart car</h1>
+
+				　　<p style="position:absolute; text-align:left; z-index:2;font-weight: lighter; color: #1B6D85;width: 40%; left: 40px; top: 40%;font-size:1.8vw">
+					&nbsp; &nbsp;Fermi wasn’t the first person to ask a variant of this question about alien intelligence. But he owns
+					it. The query is known
+					around the world as the Fermi paradox. It’s typically summarized like this: If the universe is unfathomably
+					large, the probability of intelligent alien life seems almost certain.
+				</p>
+				</p>
+			</div>
+
+
+
+			<div style="font-size:2vw;font-family: goudy old style ;margin-top: 5%" align="center" ;>Our Awesome Crew</div>
+			<br>
+			<div style="font-size:2vw; font-family: goudy old style ;margin-top: 5%;  text-align:center;padding-left: 10%; padding-right: 10%;">
+				Our unique online teaching style makes learning easy for everyone.Whether you are trying to land a new job, brush
+				up on your skills.
+			</div>
+
+			<div id="crewphoto">
+				<div class="img_div">
+					<img class="who" src="img/img-005Qc09Xgy1g73hpjbu44g30dc0dc4k7.gif" style="align-content: center;" />
+				</div>
+			</div>
+		</div>
+
+
+		<div id="video" style="display: none;text-align:center;">
+			<p style="color: #28A4C9; font-size: 2vw;">Northern Europe's Natural Scene</p>
+			<video width="80%" controls  poster="img/Northern.jpg">
+				<source src="video/Northern%20Europe.mp4" type="video/mp4">
+		</div>
+
+
+		<div id="article" style="display: none;margin-left: 5%;">
+			<div>
+			<a href="https://www.mafengwo.cn/i/19121014.html" style="color: black;">
+				<td></td>
+				<img src="img/CoUBUl6XCiyAHfadAAZyeC8089g427.jpg" alt="58天穿越南亚---尼泊尔>印度>斯里兰卡" style="width: 30%;" />
+				<span style="position: absolute;margin-left: 3%; width: 50%;">
+					<h3 style="color: #28A4C9;">58天穿越南亚---尼泊尔>印度>斯里兰卡<br></h3>
+					<p style="text-indent:2em">100多天的从 南亚 到 东南亚 ，经历了新冠疫情后回国，本期写一写 南亚 篇的第一国-- 尼泊尔 前言
+						这个世界上只有两种景令我欲罢不能，一种是海岛，另一种就是雪山。一种未能完成近距离观看...</p>
+				</span>
+			</a>
+			</div>
+			<div style="margin-top: 3%;"> 
+			<a href="https://www.mafengwo.cn/i/18515275.html" style="color: black;">
+				<td></td>
+				<img src="img/CoUBGV3uWQqAd0RCADy13FBNO-s165.jpg" alt="放风之旅，圆梦新西兰" style="width: 30%;" />
+				<span style="position: absolute;margin-left: 3%; width: 50%;">
+					<h3 style="color: #28A4C9;">放风之旅，圆梦新西兰<br></h3>
+					<p style="text-indent:2em">
+						阔别马蜂窝两年，在这两年期间，生了个娃，做了个月子，在过年的时候拼了个假去 新西兰 放了个风。
+						自从有了孩子，生活别提多丰富了，完全没有自己的时间和空间┑(￣Д ￣)┍ 马上又要过... </p>
+				</span>
+			</a>
+			</div>
+
+		</div>
+
+
+
+		<div id="xxx" style="display: none;margin-left: 5%;">
+			<p>未完待续。。。</p>
+		</div>
+
+	</body>
+</html>
